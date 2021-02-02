@@ -1,0 +1,23 @@
+<ion-item>
+  <ion-label><b>Email</b></ion-label>
+  <ion-input [(ngModel)]="loginData.email" placeholder="Entrez votre email"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label><b>Mot de passe</b></ion-label>
+  <ion-input [(ngModel)]="loginData.password" type="password" placeholder="Entrez votre mot de passe"></ion-input>
+</ion-item>
+
+<ion-button (click)="doFbLogin()" expand="block" color="tertiary">Login with Facebook</ion-button>
+
+<ion-button (click)="doGoogleLogin()" expand="block" color="tertiary">Login with Google</ion-button>
+
+
+<div class="ion-padding">
+
+  <ion-button (click)="Login()" expand="block" color="tertiary">Connexion</ion-button>
+
+  <p style="text-align: center;">ou</p>
+
+  <ion-button (click)="RegisterInfo()" expand="block" color="tertiary">Inscription</ion-button>
+</div>
